@@ -6,7 +6,7 @@ pipeline {
     label "jenkins-maven"
   }
   environment {
-    DEPLOY_NAMESPACE = "jglick-testing-production"
+    DEPLOY_NAMESPACE = "jglick-testing-staging"
   }
   stages {
     stage('Validate Environment') {

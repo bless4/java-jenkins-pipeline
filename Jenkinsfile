@@ -2,9 +2,7 @@ pipeline {
   options {
     disableConcurrentBuilds()
   }
-  agent {
-    label "jenkins-maven"
-  }
+  agent any
   environment {
     DEPLOY_NAMESPACE = "jglick-testing-staging"
   }
